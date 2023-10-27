@@ -1,0 +1,86 @@
+
+*{
+    font-family: sans-serif;
+}
+
+body {
+    background-color: beige;    
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 98%;
+    padding: 15px;
+}
+
+#dolar{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+#compra, #venta {
+    color: green;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(226, 207, 179);
+}
+
+.cotizador {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.coticontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#cotizacion {
+    font-style: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .form-group {
+        margin: 5px 0;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    select, button {
+        font-size: 14px;
+    }
+}
+

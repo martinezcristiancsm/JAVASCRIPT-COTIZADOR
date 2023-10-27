@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de Seguros de Automóvil</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div id="dolar">
+            <h8 style="font-weight: bold;">Dólar Blue:</h8>
+            <div id="compra">
+                <h8>Compra:</h8>
+                <h8 id="dolarCompra"></h8>
+            </div>
+            <div id="venta">
+                <h8>Venta:</h8>
+                <h8 id="dolarVenta"></h8>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cotizador">
+            <h1>Cotizá el seguro de tu auto:</h1>
+            <div class="form-group">
+                <label for="marca">Marca del automóvil:</label>
+                <select id="marca" onchange="cargarModelos()">
+                    <option value="" disabled selected>Selecciona una marca</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="modelo">Modelo del automóvil:</label>
+                <select id="modelo">
+                    <option value="" disabled selected>Selecciona una marca primero</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="año">Año del automóvil:</label>
+                <select id="año">
+                    <option value="" disabled selected>Selecciona un año</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+            <button id="cotizarBtn">Cotizar Seguro</button>
+        </div>
+
+        <div class="coticontainer">
+            
+        <div id="cotizacion"></div>
+
+        <div class="spinner" id="spinner" style="display: none;">
+            <h4>Cotizando...</h4>
+        </div>
+
+    </div>
+</div>
+        
+<script src="./script/script.js"></script>
+</body>
+</html>
